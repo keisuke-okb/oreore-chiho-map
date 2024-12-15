@@ -116,7 +116,7 @@ if __name__ == "__main__":
     map_height = 40
 
     # キーワードリストの読み込み
-    li = pd.read_csv("list.csv", encoding="cp932", header=None)
+    li = pd.read_csv("list.csv", encoding="cp932", header=None).drop_duplicates()
     li = li.sort_values(0).reset_index(drop=True)
     keywords = li[0].values
 
