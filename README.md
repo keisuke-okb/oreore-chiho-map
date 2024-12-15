@@ -9,7 +9,8 @@
 - Torchのモデルを使った推論（GPU）
 - matplotlibによるグラフの描画
 - pillowを使った画像処理
-- ハッシュ値によるシードの固定化：入力キーワードの組み合わせが同じなら同じマップが生成される
+- キーワードリストから固有シードの算出：ハッシュ関数を利用
+- 固有シードによる砂漠、岩地などのランダム地形の生成：入力キーワードの組み合わせが同じなら同じ地形が生成される
 
 
 本プログラムで地図を生成し、Stable Diffusionで地形をリアル化したサンプル
@@ -145,3 +146,50 @@ YouTube
 - 次元削減結果から各タウン・シティを命名
 <img src="./sample/sample1/texture_map_mod_sd_text.png">
 
+
+
+## 平日の仕事終わりは酒や飲み会で楽しみ、休日は小さい子供と過ごす家族の時間好きな30代のビジネスマン
+
+- 好きなものリスト
+```csv
+仕事終わりのビール
+居酒屋
+飲み会
+同僚との雑談
+子供と一緒にプリキュア鑑賞
+家族でピクニック
+子供と公園遊び
+動物園
+水族館
+ディズニーリゾート
+カメラで家族写真
+お弁当作り
+車で近場の旅行
+家族でショッピングモール
+子供の成長アルバム作り
+温泉旅行の計画立て
+一眼レフカメラ
+早朝ランニング
+家族との団らん
+休日ドライブ
+地元イベント
+```
+
+
+- 次元削減結果
+<img src="./sample/sample2/pca.png">
+
+- ピクセル地形
+<img src="./sample/sample2/terrain_map.png">
+
+- テクスチャ描画地図
+<img src="./sample/sample2/texture_map.png">
+
+- 道路
+<img src="./sample/sample2/road_map.png">
+
+- (オプション) Stable Diffusion変換後
+<img src="./sample/sample2/texture_map_mod_sd.png">
+
+- 次元削減結果から各タウン・シティを命名
+<img src="./sample/sample2/texture_map_mod_sd_text.png">
