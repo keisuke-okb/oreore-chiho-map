@@ -95,3 +95,27 @@ model = embed.EmbeddingModel(model_path="Z:\models\multilingual-e5-large")
 
 - ステップバイステップの場合は`step1_embed.ipynb`、`step2_generate_oreorechiho.ipynb`の順に上のセルから実行
 - 一括実行の場合：`python main.py`を実行
+
+
+# サンプル生成結果
+
+## 休日はクラスメイトとお出かけし、平日は授業後家で動画や漫画を満喫する大学生
+
+- 次元削減結果
+<img src="./sample/sample1/pca.png">
+
+- ピクセル地形
+<img src="./sample/sample1/terrain_map.png">
+
+- テクスチャ描画地図
+<img src="./sample/sample1/texture_map.png">
+
+- 道路
+<img src="./sample/sample1/road_map.png">
+
+- (オプション) Stable Diffusion変換後
+<img src="./sample/sample1/texture_map_mod_sd.png">
+
+- 次元削減結果から各タウン・シティを命名
+<img src="./sample/sample1/texture_map_mod_sd_text.png">
+
