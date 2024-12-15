@@ -20,7 +20,8 @@
 
 ## 事前準備
 
-Python仮想環境を作成します。
+Python仮想環境を作成します。Jupyter Notebookで生成する場合、別途カーネルの登録が必要です。
+参考記事：「Jupyter Notebook のカーネルに仮想環境をセットする方法」https://qiita.com/smiler5617/items/e0d9b3034d79457cc253
 
 ```powershell
 git clone "https://github.com/keisuke-okb/oreore-chiho-map.git"
